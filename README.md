@@ -1,61 +1,45 @@
-# :package_description
+# TextInput with a select affix
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/:vendor_slug/:package_slug.svg?style=flat-square)](https://packagist.org/packages/:vendor_slug/:package_slug)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/:vendor_slug/:package_slug/run-tests?label=tests)](https://github.com/:vendor_slug/:package_slug/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/:vendor_slug/:package_slug/Check%20&%20fix%20styling?label=code%20style)](https://github.com/:vendor_slug/:package_slug/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/:vendor_slug/:package_slug.svg?style=flat-square)](https://packagist.org/packages/:vendor_slug/:package_slug)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/marvinosswald/filament-input-select-affix.svg?style=flat-square)](https://packagist.org/packages/marvinosswald/filament-input-select-affix)
+[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/marvinosswald/filament-input-select-affix/run-tests?label=tests)](https://github.com/marvinosswald/filament-input-select-affix/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/marvinosswald/filament-input-select-affix/Check%20&%20fix%20styling?label=code%20style)](https://github.com/marvinosswald/filament-input-select-affix/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
+[![Total Downloads](https://img.shields.io/packagist/dt/marvinosswald/filament-input-select-affix.svg?style=flat-square)](https://packagist.org/packages/marvinosswald/filament-input-select-affix)
 
-<!--delete-->
----
-This repo can be used to scaffold a Filament plugin. Follow these steps to get started:
 
-1. Press the "Use this template" button at the top of this repo to create a new repo with the contents of this skeleton.
-2. Run "php ./configure.php" to run a script that will replace all placeholders throughout all the files.
-3. Make something great!
----
-<!--/delete-->
 
-This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
+this input enables you to render a select next to an input in a seamless fashion.
+
+![example](https://github.com/marvinosswald/filament-input-select-affix/blob/main/.github/images/example.png?raw=true)
+![dark example](https://github.com/marvinosswald/filament-input-select-affix/blob/main/.github/images/example_dark.png?raw=true)
+
 
 ## Installation
 
 You can install the package via composer:
 
 ```bash
-composer require :vendor_slug/:package_slug
-```
-
-You can publish and run the migrations with:
-
-```bash
-php artisan vendor:publish --tag=":package_slug-migrations"
-php artisan migrate
-```
-
-You can publish the config file with:
-
-```bash
-php artisan vendor:publish --tag=":package_slug-config"
+composer require marvinosswald/filament-input-select-affix
 ```
 
 Optionally, you can publish the views using
 
 ```bash
-php artisan vendor:publish --tag=":package_slug-views"
-```
-
-This is the contents of the published config file:
-
-```php
-return [
-];
+php artisan vendor:publish --tag="filament-input-select-affix-views"
 ```
 
 ## Usage
 
 ```php
-$skeleton = new VendorName\Skeleton();
-echo $skeleton->echoPhrase('Hello, VendorName!');
+TextInputSelectAffix::make('weight_value')
+->numeric()
+->select(fn() => Forms\Components\Select::make('weight_unit')
+    ->extraAttributes([
+        'class' => 'w-[72px]' // if you want to constrain the selects size, depending on your usecase
+    ])
+    ->options([
+    'mm' => 'mm',
+    'm' => 'm'
+]),
 ```
 
 ## Testing
@@ -78,7 +62,7 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 ## Credits
 
-- [:author_name](https://github.com/:author_username)
+- [Marvin Osswald](https://github.com/marvinosswald)
 - [All Contributors](../../contributors)
 
 ## License
