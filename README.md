@@ -37,9 +37,10 @@ TextInputSelectAffix::make('weight_value')
         'class' => 'w-[72px]' // if you want to constrain the selects size, depending on your usecase
     ])
     ->options([
-    'mm' => 'mm',
-    'm' => 'm'
-]),
+        'mm' => 'mm',
+        'm' => 'm'
+    ])
+),
 ```
 
 ## Testing

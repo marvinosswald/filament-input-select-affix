@@ -34,7 +34,7 @@
             class="fi-fo-text-input"
             :attributes="
             \Filament\Support\prepare_inherited_attributes($getExtraAttributeBag())
-                ->class(['overflow-hidden'])
+                ->class([])
         "
     >
         <x-filament::input
