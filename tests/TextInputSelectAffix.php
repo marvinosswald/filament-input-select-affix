@@ -21,7 +21,7 @@ it('accepts select', function () {
     $field = (new TextInputSelectAffix($name = Str::random()))
         ->container(ComponentContainer::make(Livewire::make()));
 
-    $field->select(Select::make("select"));
+    $field->select(Select::make('select'));
 
     expect($field)
         ->hasSelect()->toBeTrue();
