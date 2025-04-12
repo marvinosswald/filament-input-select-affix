@@ -2,6 +2,26 @@
 
 All notable changes to `filament-input-select-affix` will be documented in this file.
 
+## 0.3.0 - 2025-04-12
+
+Laravel 12 compatibility thanks to @laravel-shift ( and [KarelBrijs](https://github.com/KarelBrijs) for making me notice the PR)
+
+### What's Changed
+
+* Bump dependabot/fetch-metadata from 1.6.0 to 2.0.0 by @dependabot in https://github.com/marvinosswald/filament-input-select-affix/pull/12
+* Bump aglipanci/laravel-pint-action from 2.3.1 to 2.4 by @dependabot in https://github.com/marvinosswald/filament-input-select-affix/pull/13
+* Bump dependabot/fetch-metadata from 2.0.0 to 2.1.0 by @dependabot in https://github.com/marvinosswald/filament-input-select-affix/pull/15
+* Bump dependabot/fetch-metadata from 2.1.0 to 2.2.0 by @dependabot in https://github.com/marvinosswald/filament-input-select-affix/pull/16
+* Bump dependabot/fetch-metadata from 2.2.0 to 2.3.0 by @dependabot in https://github.com/marvinosswald/filament-input-select-affix/pull/17
+* Bump aglipanci/laravel-pint-action from 2.4 to 2.5 by @dependabot in https://github.com/marvinosswald/filament-input-select-affix/pull/18
+* Laravel 12.x Compatibility by @laravel-shift in https://github.com/marvinosswald/filament-input-select-affix/pull/19
+
+### New Contributors
+
+* @laravel-shift made their first contribution in https://github.com/marvinosswald/filament-input-select-affix/pull/19
+
+**Full Changelog**: https://github.com/marvinosswald/filament-input-select-affix/compare/0.2.0...0.3.0
+
 ## 0.2.0 - 2024-03-13
 
 ### What's Changed
