@@ -17,17 +17,17 @@
     ],
     "require": {
         "php": "^8.1 | ^8.2",
-        "filament/filament": "^3.0",
+        "filament/filament": "^3.0 | ^5.3",
         "spatie/laravel-package-tools": "^1.16.1",
-        "illuminate/contracts": "^10.0|^11.0 | ^12.0"
+        "illuminate/contracts": "^10.0|^11.0 | ^12.0 | ^13.0"
     },
     "require-dev": {
         "nunomaduro/collision": "^v7.8.1",
-        "orchestra/testbench": "^v8.9.1 | ^10.0",
-        "pestphp/pest": "^v2.24.3 | ^3.7",
-        "pestphp/pest-plugin-laravel": "v2.2.0 | ^3.1",
-        "pestphp/pest-plugin-livewire": "v2.1.0 | ^3.0",
-        "phpunit/phpunit": "^10 | ^11.5.3"
+        "orchestra/testbench": "^v8.9.1 | ^10.0 | ^11.0",
+        "pestphp/pest": "^v2.24.3 | ^3.7 | ^4.4",
+        "pestphp/pest-plugin-laravel": "v2.2.0 | ^3.1 | ^4.1",
+        "pestphp/pest-plugin-livewire": "v2.1.0 | ^3.0 | ^4.1",
+        "phpunit/phpunit": "^10 | ^11.5.3 | ^12.5.12"
     },
     "autoload": {
         "psr-4": {
